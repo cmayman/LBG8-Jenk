@@ -21,7 +21,7 @@ pipeline {
         }
         stage('Archive Files') {
             steps {
-                sh '''/usr/games/cowsay "moo" > tmp/ourcowsays.txt
+                sh '''/usr/games/cowsay "moo" > /tmp/ourcowsays.txt
                 '''
             }
         }
