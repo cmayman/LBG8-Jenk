@@ -1,2 +1,2 @@
-#! /bin/bash
-echo "$greetings World!"
+#! /bin/bash 
+echo "$1 World"
