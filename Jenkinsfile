@@ -9,16 +9,16 @@ pipeline {
         }
                 stage('Make Directoy') {
             steps {
-                sh ''' if [[ -d ~/jenkins-tutorial-test ]]
+                sh '''if [ -d home/jenkins/jenkins-tutorial-test ]
                 then echo "directory exists"
-                else mkdir ~/jenkins-tutorial-test
+                else mkdir home/jenkins/jenkins-tutorial-test
                 fi
                 '''
             }
         }
                 stage('Create Files') {
             steps {
-                sh '''touch ~/jenkins-tutorial-test/file1 ~/jenkins-tutorial-test/file2
+                sh '''touch /home/jenkins/jenkins-tutorial-test/file1 /home/jenkins/jenkins-tutorial-test/file2
                 '''
             }
         }
