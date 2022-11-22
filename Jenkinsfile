@@ -9,9 +9,9 @@ pipeline {
         }
                 stage('Make Directoy') {
             steps {
-                sh '''if [ -d home/jenkins/jenkins-tutorial-test ]
+                sh '''if [ -d /home/jenkins/jenkins-tutorial-test ]
                 then echo "directory exists"
-                else mkdir home/jenkins/jenkins-tutorial-test
+                else mkdir /home/jenkins/jenkins-tutorial-test
                 fi
                 '''
             }
